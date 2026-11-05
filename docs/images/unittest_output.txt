@@ -1,0 +1,49 @@
+$ python -m unittest discover -s tests -v
+
+test_delete_does_not_mutate_source (test_containers.TestTask1SliceDelete.test_delete_does_not_mutate_source) ... ok
+test_empty_sequence (test_containers.TestTask1SliceDelete.test_empty_sequence)
+异常：空列表切片删除不报错。 ... ok
+test_loop_remove_skips_consecutive_even (test_containers.TestTask1SliceDelete.test_loop_remove_skips_consecutive_even)
+边界：连续偶数时边遍历边删除会漏删。 ... ok
+test_negative_step (test_containers.TestTask1SliceDelete.test_negative_step) ... ok
+test_reverse_slice_deletes_all (test_containers.TestTask1SliceDelete.test_reverse_slice_deletes_all)
+边界：del ls[::-1] 会删除全部元素。 ... ok
+test_safe_remove_even (test_containers.TestTask1SliceDelete.test_safe_remove_even) ... ok
+test_step_three_from_one (test_containers.TestTask1SliceDelete.test_step_three_from_one) ... ok
+test_step_three_from_zero (test_containers.TestTask1SliceDelete.test_step_three_from_zero) ... ok
+test_frozenset_hashable (test_containers.TestTask2Hashable.test_frozenset_hashable) ... ok
+test_int_tuple_hashable (test_containers.TestTask2Hashable.test_int_tuple_hashable) ... ok
+test_list_unhashable (test_containers.TestTask2Hashable.test_list_unhashable) ... ok
+test_nested_set_with_frozenset (test_containers.TestTask2Hashable.test_nested_set_with_frozenset) ... ok
+test_plain_set_unhashable (test_containers.TestTask2Hashable.test_plain_set_unhashable) ... ok
+test_tuple_reference_mutable (test_containers.TestTask2Hashable.test_tuple_reference_mutable) ... ok
+test_tuple_with_list_unhashable (test_containers.TestTask2Hashable.test_tuple_with_list_unhashable) ... ok
+test_differences (test_containers.TestTask3SetOps.test_differences) ... ok
+test_empty_interval (test_containers.TestTask3SetOps.test_empty_interval)
+边界：区间为空时集合推导式返回空集合。 ... ok
+test_intersection (test_containers.TestTask3SetOps.test_intersection) ... ok
+test_multiples_of_four (test_containers.TestTask3SetOps.test_multiples_of_four) ... ok
+test_symmetric_difference (test_containers.TestTask3SetOps.test_symmetric_difference) ... ok
+test_union (test_containers.TestTask3SetOps.test_union) ... ok
+test_empty_list (test_containers.TestTask4Dedup.test_empty_list)
+异常：空列表去重返回空列表。 ... ok
+test_nested_dedup_keeps_original_unchanged (test_containers.TestTask4Dedup.test_nested_dedup_keeps_original_unchanged) ... ok
+test_nested_list_dedup (test_containers.TestTask4Dedup.test_nested_list_dedup) ... ok
+test_ordered_dict (test_containers.TestTask4Dedup.test_ordered_dict) ... ok
+test_ordered_loop (test_containers.TestTask4Dedup.test_ordered_loop) ... ok
+test_two_ordered_methods_agree (test_containers.TestTask4Dedup.test_two_ordered_methods_agree) ... ok
+test_unordered_dedup_content (test_containers.TestTask4Dedup.test_unordered_dedup_content) ... ok
+test_both_classes (test_containers.TestTask5CourseStats.test_both_classes) ... ok
+test_empty_input (test_containers.TestTask5CourseStats.test_empty_input)
+异常：两班都没有学生时结果全为空。 ... ok
+test_intersection_as_tuple_and_set (test_containers.TestTask5CourseStats.test_intersection_as_tuple_and_set) ... ok
+test_only_class1 (test_containers.TestTask5CourseStats.test_only_class1) ... ok
+test_only_one_class (test_containers.TestTask5CourseStats.test_only_one_class) ... ok
+test_tuple_can_join_set (test_containers.TestTask5CourseStats.test_tuple_can_join_set)
+⑤ 交集的整数元组可哈希，能再放回集合。 ... ok
+test_unique_preserve_order (test_containers.TestTask5CourseStats.test_unique_preserve_order) ... ok
+
+----------------------------------------------------------------------
+Ran 35 tests in 0.001s
+
+OK
