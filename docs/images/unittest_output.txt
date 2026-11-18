@@ -1,5 +1,3 @@
-$ python -m unittest discover -s tests -v
-
 test_delete_does_not_mutate_source (test_containers.TestTask1SliceDelete.test_delete_does_not_mutate_source) ... ok
 test_empty_sequence (test_containers.TestTask1SliceDelete.test_empty_sequence)
 异常：空列表切片删除不报错。 ... ok
